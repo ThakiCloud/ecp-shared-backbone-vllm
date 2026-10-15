@@ -1,0 +1,16 @@
+[project]
+name = "ecp-sb"
+version = "0.1.0"
+description = "ECP Shared-Backbone: Qwen3.8-27B generation and the ECP-Q12 evidence-gate LoRA branch in one vLLM engine"
+license = "Apache-2.0"
+requires-python = ">=3.10"
+
+[project.entry-points."vllm.general_plugins"]
+ecp_sb = "ecp_sb:register"
+
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["ecp_sb"]

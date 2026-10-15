@@ -1,0 +1,3 @@
+# Verified runtime: the vllm/vllm-openai:v0.28.0 image (vllm 0.28.0) plus this plugin (pip install --no-deps .).
+# The deployment check passed on this runtime only. Other vLLM versions are not supported by v0.1.0.
+vllm==0.28.0
